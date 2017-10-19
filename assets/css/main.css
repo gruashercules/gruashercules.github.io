@@ -411,7 +411,7 @@ p, ul, ol, dl, table {
 
 /* Box */
 .box {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.7);
   color: #39454b;
   padding: 2em; }
   .box > :last-child {
@@ -1455,17 +1455,30 @@ body {
         line-height: 1.5em; } }
 
 /* Intro */
-/* One */
+#intro {
+  background: url("images/overlay2.png");
+  background-size: 256px 256px, cover;
+  background-attachment: fixed, fixed;
+  background-position: top left, bottom center;
+  background-repeat: repeat, no-repeat; }
+
+#one {
+  background: url("images/overlay2.png");
+  background-size: 256px 256px, cover;
+  background-attachment: fixed, fixed;
+  background-position: top left, bottom center;
+  background-repeat: repeat, no-repeat; }
+
 /* Two */
 #two {
-  background: url("images/overlay.png"), url("../../images/img01.jpg");
+  background: url("images/overlay.png"), url("../../images/img02.jpg");
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, center center; }
 
 /* Three */
 #three {
-  background: url("images/overlay.png"), url("../../images/img02.jpg");
+  background: url("images/overlay.png"), url("../../images/img01.jpg");
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, center center; }
@@ -1544,7 +1557,7 @@ iframe, object, embed {
 #header-logo .logo {
   align-self: center;
   flex-basis: 300px;
-  max-width: 30%; }
+  max-width: 40%; }
 
 .video-foreground,
 .video-background iframe {
@@ -1597,33 +1610,35 @@ iframe, object, embed {
     width: 160%; } }
 @media screen and (max-width: 1000px) {
   .video-background {
-    background: #000;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: -401px;
-    z-index: -99;
-    width: 217%; } }
+    display: none; }
+
+  /* Intro */
+  #intro {
+    background: url("images/overlay2.png"), url("../../images/bg2.jpg");
+    background-size: 256px 256px, cover;
+    background-attachment: fixed, fixed;
+    background-position: top left, bottom center;
+    background-repeat: repeat, no-repeat; }
+
+  /* One */
+  #one {
+    background: url("images/overlay.png"), url("../../images/bg2.jpg");
+    background-size: 256px 256px, cover;
+    background-attachment: fixed, fixed;
+    background-position: top left, center center; } }
 @media screen and (max-width: 736px) {
   .video-background {
-    background: #000;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: -617px;
-    z-index: -99;
-    width: 333%; } }
+    display: none; } }
 @media screen and (max-width: 480px) {
   .video-background {
-    background: #000;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: -546px;
-    z-index: -99;
-    width: 502%; } }
+    display: none; } }
+@media (min-aspect-ratio: 16 / 9) {
+  .video-foreground {
+    height: 300%;
+    top: -100%; } }
+@media (max-aspect-ratio: 16 / 9) {
+  .video-foreground {
+    width: 300%;
+    left: -100%; } }
 
 /*# sourceMappingURL=main.css.map */
