@@ -439,7 +439,7 @@ button {
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  background-color: #9ac8e9;
+  background-color: #71b2de;
   border: 0;
   border-radius: 3.5em;
   color: #ffffff;
@@ -488,13 +488,13 @@ button {
   input[type="reset"]:hover,
   .button:hover,
   button:hover {
-    background-color: #afd3ee; }
+    background-color: #86bde3; }
   input[type="button"]:active,
   input[type="submit"]:active,
   input[type="reset"]:active,
   .button:active,
   button:active {
-    background-color: #85bde4; }
+    background-color: #5ca7d9; }
   input[type="button"].style2,
   input[type="submit"].style2,
   input[type="reset"].style2,
@@ -576,7 +576,7 @@ textarea {
   width: 100%;
   padding: 0.65em 0.75em;
   background: none;
-  border: solid 2px #e5e6e7;
+  border: solid 2px #b0b7bf;
   color: inherit;
   border-radius: 0.5em;
   outline: none; }
@@ -588,7 +588,7 @@ textarea {
   input[type="url"]:focus,
   select:focus,
   textarea:focus {
-    border-color: #9ac8e9; }
+    border-color: #71b2de; }
 
 input[type="text"],
 input[type="password"],
@@ -1190,7 +1190,12 @@ table {
   background: rgba(255, 255, 255, 0.95);
   height: 3em;
   line-height: 3em;
-  box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-start; }
+  #header img {
+    flex: auto;
+    max-width: 202px; }
   #header h1 {
     position: absolute;
     left: 1em;
@@ -1337,7 +1342,7 @@ body {
     .main.style3.primary {
       background: #ffffff; }
     .main.style3.secondary {
-      background: #f5f6f7; }
+      background: #b0b7bf; }
   .main.dark {
     color: #ffffff; }
     .main.dark a {
@@ -1486,7 +1491,7 @@ body {
 #four {
   width: 100%;
   margin: 0;
-  background-color: #9ac8e9;
+  background-color: #71b2de;
   color: #ffffff;
   padding-bottom: 100px; }
   #four h2 {
