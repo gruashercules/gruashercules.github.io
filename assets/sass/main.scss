@@ -51,10 +51,20 @@
 	@import 'layout/main';
 	@import 'layout/footer';
 
+	/* fonts */
+	@font-face {
+	    font-family: 'galano_grotesque_alt';
+	    src: url('../fonts/galano_grotesque_alt.woff2') format('woff2'),
+	         url('../fonts/galano_grotesque_alt.woff') format('woff'),
+					 url('../fonts/galano_grotesque_alt.ttf') format('ttf');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
 	/* Intro */
 
 	#intro {
-		background: url('images/overlay2.png');
+		background: url('images/overlay3.png');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -62,7 +72,7 @@
 	}
 
 	#one {
-		background: url('images/overlay2.png');
+		background: url('images/overlay3.png');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -171,7 +181,7 @@
 #header-logo .logo {
 	align-self: center;
 	flex-basis: 300px;
-	max-width: 40%;
+	max-width: 44%;
 }
 
 .video-foreground,
@@ -227,7 +237,7 @@
 	/* Intro */
 
 		#intro {
-			background: url('images/overlay2.png'), url('../../images/bg2.jpg');
+			background: url('images/overlay3.png'), url('../../images/bg2.jpg');
 			background-size: 256px 256px, cover;
 			background-attachment: fixed, fixed;
 			background-position: top left, bottom center;

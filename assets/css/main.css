@@ -334,7 +334,7 @@ body {
     line-height: 2.025em; } }
 /* Type */
 body, input, textarea, select {
-  font-family: "Source Sans Pro", "sans-serif";
+  font-family: "galano_grotesque_alt", "Source Sans Pro", "sans-serif";
   font-weight: 300;
   font-size: 18pt;
   line-height: 1.75em;
@@ -1215,7 +1215,6 @@ table {
       margin: 0; }
       #header nav ul li {
         display: inline-block;
-        margin-left: 0.5em;
         font-size: 0.9em; }
         #header nav ul li a {
           display: block;
@@ -1344,11 +1343,11 @@ body {
     .main.style3.secondary {
       background: #b0b7bf; }
   .main.dark {
-    color: #ffffff; }
+    color: #001F5B; }
     .main.dark a {
       color: inherit; }
     .main.dark .button.style2 {
-      border-color: #ffffff; }
+      border-color: #fff; }
       .main.dark .button.style2:hover {
         background-color: rgba(255, 255, 255, 0.125); }
       .main.dark .button.style2:active {
@@ -1459,16 +1458,22 @@ body {
       #footer ul.menu li a {
         line-height: 1.5em; } }
 
+/* fonts */
+@font-face {
+  font-family: 'galano_grotesque_alt';
+  src: url("../fonts/galano_grotesque_alt.woff2") format("woff2"), url("../fonts/galano_grotesque_alt.woff") format("woff"), url("../fonts/galano_grotesque_alt.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
 /* Intro */
 #intro {
-  background: url("images/overlay2.png");
+  background: url("images/overlay3.png");
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, bottom center;
   background-repeat: repeat, no-repeat; }
 
 #one {
-  background: url("images/overlay2.png");
+  background: url("images/overlay3.png");
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, bottom center;
@@ -1562,7 +1567,7 @@ iframe, object, embed {
 #header-logo .logo {
   align-self: center;
   flex-basis: 300px;
-  max-width: 40%; }
+  max-width: 44%; }
 
 .video-foreground,
 .video-background iframe {
@@ -1619,7 +1624,7 @@ iframe, object, embed {
 
   /* Intro */
   #intro {
-    background: url("images/overlay2.png"), url("../../images/bg2.jpg");
+    background: url("images/overlay3.png"), url("../../images/bg2.jpg");
     background-size: 256px 256px, cover;
     background-attachment: fixed, fixed;
     background-position: top left, bottom center;
